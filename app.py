@@ -1,12 +1,13 @@
 from flask import Flask
+import subprocess
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
+    subprocess.call(['./venv_set.sh'], shell=True)
 
-
-    return 'Hello World!'
+    return 'success'
 
 
 if __name__ == '__main__':
