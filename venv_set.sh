@@ -15,5 +15,5 @@ pip install -r "$url/requirements.txt"
 
 cp ./settings.py "$url/youtube_survey_tool/settings.py"
 
-sudo python3 "$url/manage.py" makemigrations
-sudo python3 "$url/manage.py" migrate
+python "$url/manage.py" makemigrations
+python "$url/manage.py" migrate
